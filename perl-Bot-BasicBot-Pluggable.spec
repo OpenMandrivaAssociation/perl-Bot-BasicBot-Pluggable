@@ -8,6 +8,7 @@ Group:		Development/Perl
 Summary:    Extension to the simple irc bot base class allowing for pluggable modules
 Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Bot/Bot-BasicBot-Pluggable-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{realname}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	perl-devel
 BuildRequires:	perl(XML::Feed)
 BuildRequires:	perl(POE)
