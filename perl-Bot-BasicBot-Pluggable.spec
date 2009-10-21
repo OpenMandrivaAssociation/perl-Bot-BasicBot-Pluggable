@@ -15,6 +15,8 @@ BuildRequires:	perl(POE)
 BuildRequires:	perl(Bot::BasicBot)
 BuildRequires:  perl(URI::Find::Simple)
 BuildRequires:  perl(URI::Title)
+BuildRequires:  perl(DBI)
+BuildRequires:  perl(DBD::SQLite)
 	
 BuildArch: noarch
 
