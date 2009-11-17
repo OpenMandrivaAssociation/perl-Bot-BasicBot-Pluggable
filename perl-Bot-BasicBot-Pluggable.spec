@@ -24,7 +24,7 @@ BuildRequires:	perl(Text::Unidecode)
 BuildRequires:  perl(URI::Find::Simple)
 BuildRequires:  perl(URI::Title)
 BuildRequires:	perl(XML::Feed)
-BuildRequires:	perl(YAML)
+BuildRequires:	perl(YAML::XS)
 	
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
