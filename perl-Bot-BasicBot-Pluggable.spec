@@ -12,9 +12,14 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Bot/Bot-BasicBot-Pluggable-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(Bot::BasicBot)
+BuildRequires:	perl(Config::Find)
 BuildRequires:  perl(DBD::SQLite)
 BuildRequires:  perl(DBI)
+BuildRequires:  perl(Moose)
+BuildRequires:  perl(MooseX::Getopt)
+BuildRequires:  perl(MooseX::SimpleConfig)
 BuildRequires:	perl(POE)
+BuildRequires:	perl(Text::Unidecode)
 BuildRequires:  perl(URI::Find::Simple)
 BuildRequires:  perl(URI::Title)
 BuildRequires:	perl(XML::Feed)
