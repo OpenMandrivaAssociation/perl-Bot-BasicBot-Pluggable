@@ -1,30 +1,32 @@
-%define realname   Bot-BasicBot-Pluggable
+%define upstream_name    Bot-BasicBot-Pluggable
+%define upstream_version 0.83
 
-Name:		perl-%{realname}
-Version:    0.50
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
-License:	Artistic or GPL
-Group:		Development/Perl
+
 Summary:    Extension to the simple irc bot base class allowing for pluggable modules
-Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Bot/Bot-BasicBot-Pluggable-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/%{realname}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	perl-devel
-BuildRequires:	perl(XML::Feed)
-BuildRequires:	perl(POE)
+License:	Artistic or GPL+
+Group:		Development/Perl
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Bot/Bot-BasicBot-Pluggable-%{upstream_version}.tar.gz
+
 BuildRequires:	perl(Bot::BasicBot)
+BuildRequires:  perl(DBD::SQLite)
+BuildRequires:  perl(DBI)
+BuildRequires:	perl(POE)
 BuildRequires:  perl(URI::Find::Simple)
 BuildRequires:  perl(URI::Title)
-BuildRequires:  perl(DBI)
-BuildRequires:  perl(DBD::SQLite)
+BuildRequires:	perl(XML::Feed)
 	
 BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Extension to the simple irc bot base class allowing for pluggable modules.
 
 %prep
-%setup -q -n Bot-BasicBot-Pluggable-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version} 
 # (misc) done because packaging DBM::Deep is too long for the moment
 rm -f lib/Bot/BasicBot/Pluggable/Store/Deep.pm
 rm -f t/03store_deep.t
