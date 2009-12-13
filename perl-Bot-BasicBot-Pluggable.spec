@@ -1,5 +1,5 @@
 %define upstream_name    Bot-BasicBot-Pluggable
-%define upstream_version 0.83
+%define upstream_version 0.84
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -15,6 +15,7 @@ BuildRequires:	perl(Bot::BasicBot)
 BuildRequires:	perl(Config::Find)
 BuildRequires:  perl(DBD::SQLite)
 BuildRequires:  perl(DBI)
+BuildRequires:  perl(DBM::Deep)
 BuildRequires:  perl(Moose)
 BuildRequires:  perl(MooseX::Getopt)
 BuildRequires:  perl(MooseX::ConfigFromFile)
@@ -34,9 +35,6 @@ Extension to the simple irc bot base class allowing for pluggable modules.
 
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version} 
-# (misc) done because packaging DBM::Deep is too long for the moment
-rm -f lib/Bot/BasicBot/Pluggable/Store/Deep.pm
-rm -f t/03store_deep.t
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
