@@ -1,5 +1,5 @@
 %define upstream_name    Bot-BasicBot-Pluggable
-%define upstream_version 0.90
+%define upstream_version 0.91
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -13,6 +13,7 @@ Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Bot/Bot-BasicBot-Plugg
 
 BuildRequires:	perl(Bot::BasicBot)
 BuildRequires:	perl(Config::Find)
+BuildRequires:	perl(Crypt::SaltedHash)
 BuildRequires:  perl(DBD::SQLite)
 BuildRequires:  perl(DBI)
 BuildRequires:  perl(DBM::Deep)
