@@ -1,15 +1,15 @@
 %define upstream_name    Bot-BasicBot-Pluggable
-%define upstream_version 0.92
+%define upstream_version 0.98
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.98
+Release:	1
 
 Summary:	Extension to the simple irc bot base class allowing for pluggable modules
 License:	Artistic or GPL+
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Bot/Bot-BasicBot-Pluggable-%{upstream_version}.tar.gz
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Bot/Bot-BasicBot-Pluggable-0.98.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Bot::BasicBot)
@@ -116,3 +116,4 @@ make test
 
 * Mon Sep 24 2007 Michael Scherer <misc@mandriva.org> 0.50-1mdv2008.0
 - First Mandriva package
+
