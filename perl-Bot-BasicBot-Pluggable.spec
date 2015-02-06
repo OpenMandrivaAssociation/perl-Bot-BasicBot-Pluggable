@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.98
-Release:	2
+Release:	3
 
 Summary:	Extension to the simple irc bot base class allowing for pluggable modules
 License:	Artistic or GPL+
