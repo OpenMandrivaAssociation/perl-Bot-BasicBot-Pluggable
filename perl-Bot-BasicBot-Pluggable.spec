@@ -8,7 +8,7 @@ Release:	3
 Summary:	Extension to the simple irc bot base class allowing for pluggable modules
 License:	Artistic or GPL+
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Bot/Bot-BasicBot-Pluggable-0.98.tar.gz
 
 BuildRequires:	perl-devel
