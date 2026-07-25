@@ -1,15 +1,15 @@
 %define upstream_name    Bot-BasicBot-Pluggable
-%define upstream_version 0.98
+%define upstream_version 1.30
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.98
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Extension to the simple irc bot base class allowing for pluggable modules
 License:	Artistic or GPL+
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Bot/Bot-BasicBot-Pluggable-0.98.tar.gz
+Url:		https://metacpan.org/dist/Bot-BasicBot-Pluggable
+Source0:	https://cpan.metacpan.org/authors/id/B/BI/BIGPRESH/Bot-BasicBot-Pluggable-1.30.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
