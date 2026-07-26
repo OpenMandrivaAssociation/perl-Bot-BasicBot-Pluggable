@@ -1,9 +1,7 @@
 %define upstream_name    Bot-BasicBot-Pluggable
-%define upstream_version 1.30
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.30
+Release:	2
 
 Summary:	Extension to the simple irc bot base class allowing for pluggable modules
 License:	Artistic or GPL+
@@ -37,7 +35,7 @@ BuildArch:	noarch
 Extension to the simple irc bot base class allowing for pluggable modules.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
